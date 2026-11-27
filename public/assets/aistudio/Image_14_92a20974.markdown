@@ -1,0 +1,183 @@
+---
+name: SigiMart Design System
+colors:
+  surface: '#f3fcf1'
+  surface-dim: '#d4dcd2'
+  surface-bright: '#f3fcf1'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#eef6eb'
+  surface-container: '#e8f0e5'
+  surface-container-high: '#e2ebe0'
+  surface-container-highest: '#dce5da'
+  on-surface: '#161d17'
+  on-surface-variant: '#3d4a3e'
+  inverse-surface: '#2b322b'
+  inverse-on-surface: '#ebf3e8'
+  outline: '#6c7b6d'
+  outline-variant: '#bbcbbb'
+  surface-tint: '#006d37'
+  primary: '#006d37'
+  on-primary: '#ffffff'
+  primary-container: '#2ecc71'
+  on-primary-container: '#005027'
+  inverse-primary: '#4ae183'
+  secondary: '#485c97'
+  on-secondary: '#ffffff'
+  secondary-container: '#a8bcfe'
+  on-secondary-container: '#364a84'
+  tertiary: '#98472a'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#ff9875'
+  on-tertiary-container: '#772e14'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#6bfe9c'
+  primary-fixed-dim: '#4ae183'
+  on-primary-fixed: '#00210c'
+  on-primary-fixed-variant: '#005228'
+  secondary-fixed: '#dbe1ff'
+  secondary-fixed-dim: '#b4c5ff'
+  on-secondary-fixed: '#00174b'
+  on-secondary-fixed-variant: '#2f447d'
+  tertiary-fixed: '#ffdbd0'
+  tertiary-fixed-dim: '#ffb59d'
+  on-tertiary-fixed: '#390c00'
+  on-tertiary-fixed-variant: '#793015'
+  background: '#f3fcf1'
+  on-background: '#161d17'
+  surface-variant: '#dce5da'
+  fresh-leaf: '#2ECC71'
+  deep-ocean: '#273C75'
+  ripe-citrus: '#F1C40F'
+  strawberry-red: '#E74C3C'
+  surface-ice: '#F8FAFB'
+  market-shadow: '#2D3436'
+typography:
+  display:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '700'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  price-tag:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '700'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  unit: 4px
+  container-padding: 20px
+  stack-sm: 8px
+  stack-md: 16px
+  stack-lg: 24px
+  gutter: 12px
+---
+
+# SigiMart Design System
+
+## 1. Product Overview
+SigiMart (Siginjai Mart) adalah aplikasi mobile grocery marketplace yang menjembatani pedagang pasar tradisional dengan konsumen modern. Aplikasi ini berfokus pada penyediaan bahan pokok, sayur, buah, dan daging segar dengan sistem pengiriman cepat (on-demand) serta transparansi harga dan kualitas pasar tradisional yang dapat diakses secara online.
+
+## 2. Target Users
+* **Mahasiswa:** Membutuhkan bahan pangan murah dan praktis di sela jadwal kuliah yang padat.
+* **Pekerja:** Profesional sibuk yang tidak memiliki waktu untuk pergi ke pasar tradisional di pagi hari namun menginginkan bahan masakan segar.
+* **Ibu Rumah Tangga:** Pengambil keputusan belanja keluarga yang mengutamakan kesegaran produk, variasi, dan efisiensi biaya belanja harian.
+* **Masyarakat Perkotaan:** Pengguna yang sudah terbiasa dengan ekosistem digital dan mengandalkan layanan delivery untuk kebutuhan rumah tangga.
+
+## 3. Core Modules
+1.  **Authentication:** Sistem keamanan akses pengguna (Registrasi via nomor telepon/email, login, dan validasi profil).
+2.  **Product Catalog:** Manajemen tampilan produk segar berdasarkan kategori pasar (Sayur, Buah, Daging, Sembako) dengan fitur pencarian.
+3.  **Cart & Checkout:** Alur transaksi mulai dari pengumpulan item, validasi stok, hingga integrasi payment gateway.
+4.  **Delivery Tracking:** Sistem pelacakan kurir real-time berbasis peta untuk memantau status pengiriman dari pasar ke rumah.
+
+## 4. Navigation Structure (Mobile)
+* **Home:** Dashboard utama (Promo, kategori populer, produk terlaris).
+* **Categories:** Penelusuran produk berdasarkan klasifikasi bahan pangan.
+* **Cart:** Daftar belanja aktif pengguna sebelum proses transaksi.
+* **Orders:** Monitoring status pesanan berjalan dan riwayat transaksi masa lalu.
+* **Profile:** Pengaturan akun, manajemen alamat pengiriman, dan pusat bantuan.
+
+## 5. Main Screens
+* **Splash Screen:** Branding logo SigiMart dengan nuansa *fresh market*.
+* **Login & Register:** Form input kredensial dan verifikasi OTP.
+* **Home Dashboard:** Search bar fungsional, banner promosi, dan grid kategori.
+* **Product Catalog:** Tampilan list produk dengan filter dan sorting harga/relevansi.
+* **Product Detail:** Foto produk, deskripsi, harga per satuan, dan tombol "Tambah ke Keranjang".
+* **Cart:** Ringkasan item belanja dengan opsi penyesuaian jumlah (qty).
+* **Checkout:** Ringkasan pesanan, pemilihan alamat, opsi pengiriman, dan metode pembayaran.
+* **Order Tracking:** Visualisasi peta dengan ikon kurir dan estimasi waktu tiba (ETA).
+* **Order History:** Rekapitulasi pesanan yang telah selesai atau dibatalkan.
+* **Profile:** Edit profil pengguna dan pengaturan preferensi aplikasi.
+
+## 6. UI Components
+* **Search bar:** Header tetap dengan placeholder "Cari sayur atau buah segar...".
+* **Product cards:** Komponen berisi gambar, label harga hijau, dan tombol '+' cepat.
+* **Category cards:** Ikon ilustratif kategori produk (Daging merah, Sayur hijau, dll).
+* **Cart button:** Tombol mengambang (FAB) atau badge pada navigasi bawah.
+* **Checkout button:** Tombol aksi utama berwarna hijau cerah dengan label total harga.
+* **Delivery status tracker:** Stepper visual (Diterima -> Diproses -> Dikirim -> Tiba).
+* **Order card:** Informasi singkat pesanan (ID Pesanan, Tanggal, Total Bayar).
+* **Notification badge:** Indikator merah pada ikon lonceng untuk update status.
+* **Bottom navigation:** Navigasi 5 tab utama (Home, Categories, Cart, Orders, Profile).
+
+## 7. User Flow
+**Register/Login** → **Browse Products** (Home/Search) → **Select Category/Product** → **Add to Cart** → **Review Cart** → **Checkout** (Select Address & Payment) → **Track Order** (Real-time tracking) → **Order Complete**.
+
+## 8. Feature Mapping from Backlog
+Mapping berdasarkan data Jira (SIG):
+* **User Trust & Access (SIG-4):** Dipetakan ke *Login* dan *Register Screen*.
+* **Marketplace Discovery (SIG-2):** Dipetakan ke *Home Dashboard*, *Search bar*, dan *Product Catalog*.
+    * Subtask: Menampilkan daftar sayur/buah berdasarkan kategori (SIG-13).
+* **Transaction Engine (SIG-3):** Dipetakan ke *Cart* dan *Checkout Screen*.
+    * Subtask: Integrasi API Payment Gateway (SIG-18).
+* **Logistics Transparency (SIG-5):** Dipetakan ke *Order Tracking Screen*.
+    * Subtask: Integrasi Google Maps SDK (SIG-20) dan update status real-time (SIG-22).
+
+## 9. Design Requirements
+* **Modern & Minimalist:** Penggunaan ruang yang lega dan tipografi yang mudah dibaca.
+* **Grocery Marketplace Aesthetic:** Menggunakan elemen visual yang memberikan kesan higienis dan segar.
+* **Green Theme:** Warna primer menggunakan kode hijau daun/segar (misal: #2ECC71).
+* **Mobile-first:** Responsif terhadap berbagai rasio layar smartphone.
+* **Clean Layout:** Memisahkan grup informasi secara jelas (misal: Info harga vs Deskripsi).
+
+## 10. Interaction Behavior
+* **Add to Cart:** Animasi meluncur dari kartu produk menuju ikon keranjang belanja.
+* **Checkout Process:** Validasi stok secara asinkron saat menekan tombol bayar.
+* **Order Tracking Behavior:** Posisi kurir di peta diperbarui secara real-time via WebSocket/Polling.
+* **Notification Flow:** Notifikasi push muncul secara instan saat kurir berada dalam radius 500m dari tujuan.

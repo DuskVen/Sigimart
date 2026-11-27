@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#00210c",
+                    "tertiary": "#98472a",
+                    "on-tertiary-container": "#772e14",
+                    "tertiary-fixed": "#ffdbd0",
+                    "surface-container-lowest": "#ffffff",
+                    "fresh-leaf": "#2ECC71",
+                    "primary": "#006d37",
+                    "secondary": "#485c97",
+                    "surface-container-highest": "#dce5da",
+                    "on-primary-fixed-variant": "#005228",
+                    "on-secondary-fixed-variant": "#2f447d",
+                    "surface-bright": "#f3fcf1",
+                    "ripe-citrus": "#F1C40F",
+                    "surface-container-low": "#eef6eb",
+                    "inverse-primary": "#4ae183",
+                    "primary-fixed-dim": "#4ae183",
+                    "on-surface": "#161d17",
+                    "on-primary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#dce5da",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "on-surface-variant": "#3d4a3e",
+                    "inverse-on-surface": "#ebf3e8",
+                    "primary-container": "#2ecc71",
+                    "surface-container-high": "#e2ebe0",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#006d37",
+                    "outline": "#6c7b6d",
+                    "surface-dim": "#d4dcd2",
+                    "surface-ice": "#F8FAFB",
+                    "on-background": "#161d17",
+                    "surface": "#f3fcf1",
+                    "secondary-container": "#a8bcfe",
+                    "on-secondary-container": "#364a84",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#005027",
+                    "surface-container": "#e8f0e5",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#00174b",
+                    "outline-variant": "#bbcbbb",
+                    "on-tertiary-fixed": "#390c00",
+                    "on-tertiary-fixed-variant": "#793015",
+                    "tertiary-container": "#ff9875",
+                    "background": "#f3fcf1",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "market-shadow": "#2D3436",
+                    "strawberry-red": "#E74C3C",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#dbe1ff",
+                    "inverse-surface": "#2b322b",
+                    "deep-ocean": "#273C75",
+                    "primary-fixed": "#6bfe9c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-padding": "20px",
+                    "stack-lg": "24px",
+                    "gutter": "12px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "unit": "4px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "price-tag": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "price-tag": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "display": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-ice text-on-surface font-body-md antialiased min-h-screen">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-gray-950 font-['Plus_Jakarta_Sans'] antialiased shadow-sm dark:shadow-none border-b border-gray-100 dark:border-gray-800 flex justify-between items-center w-full px-5 h-16 docked full-width top-0 sticky z-50">
+<div class="flex items-center gap-3">
+<div class="active:scale-95 duration-150 text-emerald-500 dark:text-emerald-400">
+<span class="material-symbols-outlined text-2xl">storefront</span>
+</div>
+<img alt="SigiMart Logo" class="h-7 w-auto object-contain" data-alt="A professional high-resolution brand logo for SigiMart, a premium fresh produce marketplace. The logo features a minimalist green leaf motif integrated with clean, modern sans-serif typography. It is set against a clean white background with a bright, airy aesthetic, emphasizing health, freshness, and modern digital commerce. The colors are vibrant emerald and deep forest greens to evoke nature and quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfleh9nwufhursxD8uBoL4MJwQoCKKy26GQb0Afmmt6U3wGmfByRL9-PmkL5rtFNBuB_Bf0aC1O4BB6-HqcNUSWhemteqVFFgfKGoNhQ1zJy5d1BugebxaR_to7ZFVz0l93kjEXJfVbhtzml6HvYF2MVobAmspWLhVzKax_OHnY9Fp9XzGGX57CgNU2oL_f8X8oQ80Sxiy80tV5llIKPJBmASP-Wej3CM9i5K4dHpl17-bd6_j-RDgBoG1Dz-n90v0C-9fJQEhthHB"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-gray-400 hover:bg-emerald-50 transition-colors p-2 rounded-full">notifications</button>
+</div>
+</header>
+<main class="pb-24 max-w-md mx-auto">
+<!-- Search Bar Section -->
+<section class="px-container-padding pt-stack-md">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-gray-400 group-focus-within:text-fresh-leaf transition-colors">search</span>
+</div>
+<input class="w-full bg-white border border-gray-200 rounded-full py-3.5 pl-12 pr-4 focus:ring-2 focus:ring-fresh-leaf/20 focus:border-fresh-leaf outline-none text-body-md transition-all shadow-sm" placeholder="Cari sayur atau buah segar..." type="text"/>
+</div>
+</section>
+<!-- Promo Banner Carousel -->
+<section class="mt-stack-lg px-container-padding">
+<div class="relative w-full aspect-[21/9] rounded-2xl overflow-hidden shadow-sm">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container to-fresh-leaf flex items-center px-8 text-white">
+<div class="w-2/3">
+<p class="text-label-md bg-white/20 backdrop-blur-sm w-fit px-2 py-0.5 rounded-full mb-2">Diskon Minggu Ini</p>
+<h2 class="font-headline-lg text-white mb-2 leading-tight">Flash Sale Sayuran 50%</h2>
+<button class="bg-white text-primary px-4 py-1.5 rounded-full font-label-md active:scale-95 transition-transform">Belanja Sekarang</button>
+</div>
+</div>
+<img class="absolute right-[-20px] top-0 h-full w-1/2 object-cover opacity-90" data-alt="A lush and vibrant high-definition photograph of a variety of garden-fresh vegetables including crisp green peppers, bright red tomatoes, and leafy spinach. The lighting is bright, morning sunlight style to emphasize the dewy freshness and high-quality organic nature of the produce. The composition is dynamic, showing a close-up texture of the vegetables against a clean, modern market backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm2kSVSVIAQsYOBQrv1yr8q9cTPSvKAdY5ezsKdBuHjSue8s-PBUXI9d3pkGceyDuVuJDfOrhbkgcK4chW1ZYFGeYFeBkRye0zD0wMKX8RkTNBsTYHMujW8cLQJor9b4G83ZDPewkaKQ5l2bKRWqeWk5w9jvwVuoVReC6VjOWKHJoxSb9mcOjYGFeYz8EpvFQZU-yJsalIYJ4tj9vKBNdSKlD8xhWtnvpOD0pzlQe_N1HZa17EdI3MhndqFjLcJLIj-3TqzM5Wc4Bm"/>
+</div>
+</section>
+<!-- Categories Grid -->
+<section class="mt-stack-lg px-container-padding">
+<div class="flex justify-between items-center mb-stack-md">
+<h3 class="font-headline-md text-on-surface">Kategori Populer</h3>
+<button class="text-fresh-leaf font-label-md">Lihat Semua</button>
+</div>
+<div class="grid grid-cols-4 gap-gutter">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full aspect-square rounded-2xl bg-emerald-50 flex items-center justify-center group-active:scale-90 transition-all border border-emerald-100/50">
+<span class="material-symbols-outlined text-fresh-leaf text-3xl" data-weight="fill">eco</span>
+</div>
+<span class="text-label-md text-on-surface-variant">Sayur</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full aspect-square rounded-2xl bg-orange-50 flex items-center justify-center group-active:scale-90 transition-all border border-orange-100/50">
+<span class="material-symbols-outlined text-orange-500 text-3xl" data-weight="fill">nutrition</span>
+</div>
+<span class="text-label-md text-on-surface-variant">Buah</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full aspect-square rounded-2xl bg-red-50 flex items-center justify-center group-active:scale-90 transition-all border border-red-100/50">
+<span class="material-symbols-outlined text-strawberry-red text-3xl" data-weight="fill">set_meal</span>
+</div>
+<span class="text-label-md text-on-surface-variant">Daging</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full aspect-square rounded-2xl bg-yellow-50 flex items-center justify-center group-active:scale-90 transition-all border border-yellow-100/50">
+<span class="material-symbols-outlined text-ripe-citrus text-3xl" data-weight="fill">grocery</span>
+</div>
+<span class="text-label-md text-on-surface-variant">Sembako</span>
+</div>
+</div>
+</section>
+<!-- Best Sellers Section -->
+<section class="mt-stack-lg px-container-padding">
+<div class="flex justify-between items-center mb-stack-md">
+<h3 class="font-headline-md text-on-surface">Produk Terlaris</h3>
+<button class="text-fresh-leaf font-label-md">Segarkan</button>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<!-- Product Card 1 -->
+<div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-50 flex flex-col gap-2 relative">
+<div class="absolute top-2 left-2 bg-strawberry-red text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">Best Seller</div>
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-50">
+<img class="w-full h-full object-cover" data-alt="A premium close-up of a perfectly ripe Hass avocado, sliced open to reveal its creamy green interior and smooth pit. The lighting is studio-quality and bright, highlighting the rich textures of the fruit's dark, pebbly skin. The background is a soft, clean white, giving it a high-end gourmet market feel that fits a modern minimalist UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgSbHt8qOTrPUnAQuX2v_jtsQ4l0v7uDXJO5MF2Aa4JOI2NmR22XTOWb6fUDt6pi4rd72K1KKeLcgn9c5DK0hUGykix4sPjs214Hcrv3GQVtEbIeBx5-q9OfIGXf9sN_N11L06Kws-1f9p25CSZNPnwxarwPjYc6rZ0WN1xbfgo1kVogIGZuki7FE0vavE1k2wfuGun_Bcyl3eXD15N7lBpyjITGgKLto9t6V16UnkBJimUuN8l-90IhLZdCiA6067N_8WtTNJrOkW"/>
+</div>
+<div class="mt-1">
+<h4 class="font-body-md font-semibold text-on-surface line-clamp-1">Alpukat Mentega Super</h4>
+<p class="text-label-md text-gray-400">1kg</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-tag text-fresh-leaf">Rp35.000</span>
+<button class="w-8 h-8 rounded-full bg-fresh-leaf text-white flex items-center justify-center active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-50 flex flex-col gap-2 relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-50">
+<img class="w-full h-full object-cover" data-alt="A bundle of crisp, vibrant organic carrots with their bright green leafy tops still attached. The carrots are deep orange and appear freshly pulled from the earth, clean and ready for cooking. They are photographed in natural daylight on a clean, bright surface to emphasize their nutritional value and freshness in a professional food catalog style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP9PULXMyKn2zyIBcF9gs_kmWamRk4FgbJwU52ZTlvyep-GTBMbl8IoSHiOvgXDOqd0UGad5KoFPLb2YnRe6Eb6x8a1NQSlVowRIrq3QFlTJFOHcObQp6-KM2DhSw1fxgnJ3CoSiJEmcnJ_9hsr0Bw4_s6523QpNeAznUn_fLL3P4BNSsKIp76W_S1mDEaaFeS4WGKbs5mOP4BZmXX3znA9_8HwP-6n7WSLC-O5wC9OVBeqL3rcfFICd-Wjy5PFkrmGZOHcPY9nrtY"/>
+</div>
+<div class="mt-1">
+<h4 class="font-body-md font-semibold text-on-surface line-clamp-1">Wortel Organik</h4>
+<p class="text-label-md text-gray-400">500gr</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-tag text-fresh-leaf">Rp12.500</span>
+<button class="w-8 h-8 rounded-full bg-fresh-leaf text-white flex items-center justify-center active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-50 flex flex-col gap-2 relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-50">
+<img class="w-full h-full object-cover" data-alt="A bowl of bright, glossy red cherry tomatoes, perfectly round and reflecting soft studio light. The colors are deeply saturated against a clean minimalist background. The visual style is focused on hygiene and premium food quality, illustrating the 'farm to table' freshness characteristic of a high-end digital market experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAS0AUW8HPiPPCqifPTO-pI45iAyvt6LYJi3Vtlf8Gew0CjPa8v81CV0kqUcxff1DeDlAELs1KwKAluusRfBxsbdjX-cnXOfjYbb7IQXeUNa_5hvJhug0zOMKBJq0ZvJWlQvQ5bTmIFwFpPe8kc4X2i1R8SMEzh2Qms2JlVKnKCPYlwHT_nWLDgKbyMrMkoL5rCRV7QGEEuydYgSLpNOf1Mw1YNdZ2u7wfC3O5uJP0ZaMDU2Qp9l4Rak1B0DD8ob997uoz1dqCrBx1"/>
+</div>
+<div class="mt-1">
+<h4 class="font-body-md font-semibold text-on-surface line-clamp-1">Tomat Cherry Red</h4>
+<p class="text-label-md text-gray-400">250gr</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-tag text-fresh-leaf">Rp18.000</span>
+<button class="w-8 h-8 rounded-full bg-fresh-leaf text-white flex items-center justify-center active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-white rounded-2xl p-3 shadow-sm border border-gray-50 flex flex-col gap-2 relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-gray-50">
+<img class="w-full h-full object-cover" data-alt="A stack of clean, white-shelled organic eggs in a modern minimalist carton. The scene is bright and airy, using soft shadows to create depth and a sense of high-quality kitchen essentials. The lighting is high-key, conveying a sense of purity, hygiene, and morning freshness for a premium grocery shopping app interface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQdnLN81y2hLXoe9Xs6kPHAs7vO9psdgPh2_Q48K5UyQY6xAUZASorkQ38G6OkQ4RATtsTdaiciJyEyb1f1EMgc1M6yHgDOf1iDUpu9HuvQ8C_P7HXzu-7L5-m3xGiUU8AfrfgWk9_mQ_4hgPQpvlr1qGkgiPlH9Lml2MA9HgwoSZTvGIRidHMw0cFFVJmtAYmLgQSWAb5VoHYRIl46rsAvi2gpZqnqOfsp7Z_wap99ahTSKO1pj7qn0LlwR4uDwHpey5ywiILJtKG"/>
+</div>
+<div class="mt-1">
+<h4 class="font-body-md font-semibold text-on-surface line-clamp-1">Telur Ayam Kampung</h4>
+<p class="text-label-md text-gray-400">10 butir</p>
+</div>
+<div class="flex justify-between items-center mt-auto">
+<span class="font-price-tag text-fresh-leaf">Rp28.900</span>
+<button class="w-8 h-8 rounded-full bg-fresh-leaf text-white flex items-center justify-center active:scale-90 transition-transform shadow-md">
+<span class="material-symbols-outlined text-lg">add</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-[0_-4px_12px_rgba(0,0,0,0.04)] border-t border-gray-100 dark:border-gray-800 z-50 rounded-t-2xl">
+<button class="flex flex-col items-center justify-center text-emerald-600 dark:text-emerald-400 scale-110 transition-transform font-['Plus_Jakarta_Sans'] text-[11px] font-medium active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-weight="fill">home</span>
+<span>Beranda</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-emerald-500 transition-colors font-['Plus_Jakarta_Sans'] text-[11px] font-medium active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined">grid_view</span>
+<span>Kategori</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-emerald-500 transition-colors font-['Plus_Jakarta_Sans'] text-[11px] font-medium active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span>Keranjang</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-emerald-500 transition-colors font-['Plus_Jakarta_Sans'] text-[11px] font-medium active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined">receipt_long</span>
+<span>Pesanan</span>
+</button>
+<button class="flex flex-col items-center justify-center text-gray-400 dark:text-gray-600 hover:text-emerald-500 transition-colors font-['Plus_Jakarta_Sans'] text-[11px] font-medium active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined">person</span>
+<span>Profil</span>
+</button>
+</nav>
+<!-- FAB Cart (Contextual Enhancement) -->
+<button class="fixed bottom-24 right-6 w-14 h-14 bg-fresh-leaf text-white rounded-full flex items-center justify-center shadow-lg active:scale-95 transition-all z-40 md:hidden">
+<span class="material-symbols-outlined text-2xl">shopping_basket</span>
+<div class="absolute -top-1 -right-1 bg-strawberry-red text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">3</div>
+</button>
+</body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "SigiMart - Grocery Marketplace Segar",
+  "description": "Aplikasi grocery marketplace modern untuk belanja sayur, buah, dan kebutuhan dapur segar langsung dari pasar dengan sistem pelacakan kurir real-time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

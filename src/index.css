@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-primary: #006d37;
+  --color-primary-container: #2ecc71;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #005027;
+  --color-fresh-leaf: #2ECC71;
+  --color-ripe-citrus: #F1C40F;
+  --color-strawberry-red: #E74C3C;
+  --color-deep-ocean: #273C75;
+  --color-surface: #f3fcf1;
+  --color-surface-ice: #F8FAFB;
+  --color-surface-container-low: #eef6eb;
+  --color-surface-container: #e8f0e5;
+  --color-surface-container-high: #e2ebe0;
+  --color-surface-container-highest: #dce5da;
+  --color-on-surface: #161d17;
+  --color-on-surface-variant: #3d4a3e;
+  --color-outline: #6c7b6d;
+  --color-outline-variant: #bbcbbb;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #F8FAFB;
+  color: #161d17;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.no-scrollbar::-webkit-scrollbar,
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar,
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
